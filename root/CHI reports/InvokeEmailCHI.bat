@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass "c:\batch\emailCHIuptime.ps1"

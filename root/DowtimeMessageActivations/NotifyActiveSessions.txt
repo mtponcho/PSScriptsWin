@@ -1,0 +1,3 @@
+Get-BrokerSession -BrokeringUserName * | Send-BrokerSessionMessage -MessageStyle "Critical" -Title "Scheduled downtime" -Text "ATTENTION: Scheduled downtime will start today at 08:00 pm PT, please save your work and log off prior to this time." -ErrorAction SilentlyContinue
+
+Get-BrokerSession -MachineName "TA1ADCV1\TA0SCM1*" | Send-BrokerSessionMessage -MessageStyle "Critical" -Title "Scheduled downtime" -Text "ATTENTION: Scheduled downtime will start today at 08:00 pm PT, please save your work and log off prior to this time." -ErrorAction SilentlyContinue

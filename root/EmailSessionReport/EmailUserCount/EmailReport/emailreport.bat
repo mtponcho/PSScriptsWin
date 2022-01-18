@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass "C:\batch\EmailUserCount\emailreport.ps1"

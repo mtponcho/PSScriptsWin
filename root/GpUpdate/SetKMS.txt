@@ -1,0 +1,20 @@
+echo on
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe
+cls
+echo Start gpupdate on servers listed at citrixservers.txt
+pause
+FOR /F "tokens=* delims=" %%x in (%userprofile%\desktop\vdaservers.txt) DO (
+echo %%x >>gpupdateresult.txt
+
+rem xcopy "\\172.30.16.7\software\Citrix\XenApp 7.15 LTSR CU5\Completion Files\For VDAs\ExecuteOnGold\01-KMS\kms_activation 2012.bat" \\%%x\c$\Batch /y
+rem xcopy "\\172.30.16.7\software\Citrix\XenApp 7.15 LTSR CU5\Completion Files\For VDAs\ExecuteOnGold\01-KMS\kms_activation 2012.bat" \\%%x\c$\Batch /y
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe \\%%x cscript.exe slmgr.vbs /upk
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe \\%%x cscript.exe slmgr.vbs /cpky
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe \\%%x cscript.exe slmgr.vbs /ipk W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe \\%%x cscript.exe slmgr.vbs /skms ATSINF1AKMSS301.eclptsc.eclipsnet.com:1688
+\\172.30.16.7\SealingBatchFiles\Files\PsExec.exe \\%%x cscript.exe slmgr.vbs /ato
+
+)
+
+echo gpupdate executed
+pause

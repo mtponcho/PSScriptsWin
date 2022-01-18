@@ -1,0 +1,9 @@
+Get-BrokerApplication -ClientFolder "PROD 16-3" | set-brokerapplication -clientfolder "PRD"
+
+
+$apps = Get-XAApplication -FolderPath Applications/Test
+foreach ($app in $apps)
+{
+        Disable-XAApplication -BrowserName $app.browsername
+        Set-XAApplication -BrowserName $app.browsername -Enabled $false -HideWhenDisabled $true
+}
