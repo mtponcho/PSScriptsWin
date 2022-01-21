@@ -1,1 +1,0 @@
-﻿Get-XASession | Where-Object { $_.State -eq "Disconnected" } | Stop-XASession

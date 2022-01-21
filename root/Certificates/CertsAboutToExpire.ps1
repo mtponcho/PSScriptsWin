@@ -1,1 +1,0 @@
-Get-ChildItem -Path cert: -Recurse -ExpiringInDays 75

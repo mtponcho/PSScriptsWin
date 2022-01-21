@@ -1,1 +1,0 @@
-Get-BrokerApplication -PublishedName "DEV 163 - Print Manager" | select PublishedName,AssociatedUserNames –ExpandProperty AssociatedUserNames

@@ -1,6 +1,0 @@
-Set-BrokerApplication * -ClientFolder "STG 16-3"
-
-Get-BrokerApplication -AdminFolderName "TRN_SCM184\" | Set-BrokerApplication -ClientFolder "SCM TRN 18-4"
-
-Get-BrokerApplication -AdminFolderName "TRN_SCM184\" | Add-Brokeruser  "eclptsc\ecl - scm xa support"
-Get-BrokerApplication -AdminFolderName "TRN_SCM184\" | Remove-Brokeruser  *

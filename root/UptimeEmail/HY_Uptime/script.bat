@@ -1,1 +1,0 @@
-powershell C:\Batch\HY_Uptime\Emailuptimereport.ps1 -HostFile C:\Batch\HY_Uptime\server.txt -mail

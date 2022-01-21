@@ -1,1 +1,0 @@
-powershell "c:\batch\DisconnectNoAppsSessions"
